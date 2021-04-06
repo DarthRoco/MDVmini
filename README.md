@@ -1,2 +1,3 @@
 # MDVmini
-Webiste for MDV mini project
+Webiste for MDV mini project 
+Will be using HTML,Css and JavaScript
