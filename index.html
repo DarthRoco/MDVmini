@@ -103,7 +103,7 @@
                   <tr>
                       <th>Mass [m]</th>
                       <th>
-                          <input type="number" id="mass" name="mass" value="10">
+                          <input type="number" id="mass" name="mass" value="10" step="0.0001">
                       </th>
                       <th>
                           <select id="m_unit" name="m_unit">
@@ -115,7 +115,7 @@
                   </tr>
                   <tr>
                       <th>Spring rate (Stiffness) [k]</th>
-                      <th><input type="number" id="k" name="k" value="10"></th>
+                      <th><input type="number" id="k" name="k" value="10" step="0.0001"></th>
                       <th>
                           <select id="k_unit" name="k_unit">
                               <option value="N/m">N/m</option>
@@ -126,18 +126,18 @@
                   </tr>
                   <tr>
                       <th>Damping ratio (coefficient) [ζ]</th>
-                      <th><input type="number" id="dc" name="dc" value="10"></th>
+                      <th><input type="number" id="dc" name="dc" value="10" step="0.0001"></th>
                       <th>Dimensionless</th>
                   </tr>
 
                   <tr>
                       <th>Base Excitation frequency [Ω]</th>
-                      <th><input type="number" id="Omega" name="Omega" value="10"></th>
+                      <th><input type="number" id="Omega" name="Omega" value="10" step="0.0001"></th>
                       <th>Hz</th>
                   </tr>
                   <tr>
                       <th>Base Excitation Amplitude[Y<sub>0</sub>]</th>
-                      <th><input type="number" id="baseamp" name="baseamp" value="10"></th>
+                      <th><input type="number" id="baseamp" name="baseamp" value="10" step="0.0001"></th>
                       <th>
                           <select id="y_unit" name="y_unit">
                               <option value="m">m</option>
@@ -152,7 +152,7 @@
           </table>
           <hr class="my-6">
           <div class="col-md-12 text-center">
-              <button type="button" class="btn btn-primary btn-sm" onclick="myfunction()">Calculate</button>
+              <button type="button" class="btn btn-primary btn-sm" onclick="compute()">Calculate</button>
 
           </div>
           <hr class="my-6">
@@ -177,7 +177,7 @@
                       <tr>
                           <th>Natural Frequency [&omega;<sub>n</sub>]</th>
                           <th>
-                              0
+                              <p id="NAF">0</p>
                           </th>
                           <th>
                               rad/s
@@ -185,28 +185,28 @@
                       </tr>
                       <tr>
                           <th>Damped Frequency [&omega;<sub>d</sub>]</th>
-                          <th>0</th>
+                          <th><p id="DAF">0</p></th>
                           <th>
-                              Hz
+                              Rad/s
                           </th>
                       </tr>
                       <tr>
                           <th>Damping Ratio[&zeta;]</th>
-                          <th>0</th>
+                          <th><p id="DR">0</p></th>
                           <th>
                               Dimensionless
                           </th>
                       </tr>
                       <tr>
                           <th>Critical Damping[C<sub>c</sub>]</th>
-                          <th>0</th>
+                          <th><p id="CC">0</p></th>
                           <th>
                               Dimensionless
                           </th>
                       </tr>
                       <tr>
-                          <th>Damping[C]</th>
-                          <th>0</th>
+                          <th>Transmissibility[TR]</th>
+                          <th><p id="TR">0</p></th>
                           <th>
                               Ns/m
                           </th>
