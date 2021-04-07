@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -7,11 +7,230 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>ME352</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <div class="container" id="top">
+
+          <div class="jumbotron">
+              <h1 class="display-4" id="Heading">ME352</h1>
+              <h1 class="display-6" id="Heading">Machine Dynamics And Vibration</h1>
+              <h2 class="display-7" id="Heading">Mini Project</h2>
+              <p class="lead" id="Heading">
+                  Project Name:
+                  SDOF Forced vibration:Base excitation
+              </p>
+
+              <p class="lead" id="Heading">Project Members:Shreyas,Dhruvin,Prasanna,Sayak,Subham</p>
+              <p class="lead" id="Heading">
+                  <a class="btn btn-primary btn-sm" href="#" role="button">Project Report</a>
+              </p>
+              
+          </div>
+      </div>
+      <div class="container" id="theory">
+          <div id="accordion">
+              <div class="card">
+                  <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Important Definitions
+                          </button>
+                      </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                          Add Important Definitions
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Theory
+                          </button>
+                      </h5>
+
+                  </div>
+
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                          Add Theory
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Table of Relevant Formulae
+                          </button>
+                      </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                          Add Table of Formulae;May have to make using LaTeX
+                      </div>
+                  </div>
+              </div>
+
+
+          </div>
+
+      </div>
+      <div class="container  text-center" id="inputarea">
+
+          <table class="table">
+              <thead class="thead-dark">
+                  <tr>
+                      <th colspan="3">Input Parameters for Solver</th>
+                  </tr>
+              </thead>
+             
+              <tbody>
+                  <tr class="table-active">
+                      <th>Parameter</th>
+                      <th>
+                          Value
+                      </th>
+                      <th>
+                          Unit
+                      </th>
+                  </tr>
+                  <tr>
+                      <th>Mass [m]</th>
+                      <th>
+                          <input type="number" id="mass" name="mass" value="10">
+                      </th>
+                      <th>
+                          <select id="m_unit" name="m_unit">
+                              <option value="kg">kg</option>
+                              <option value="g">g</option>
+                              <option value="lb">lb</option>
+                          </select>
+                      </th>
+                  </tr>
+                  <tr>
+                      <th>Spring rate (Stiffness) [k]</th>
+                      <th><input type="number" id="k" name="k" value="10"></th>
+                      <th>
+                          <select id="k_unit" name="k_unit">
+                              <option value="N/m">N/m</option>
+                              <option value="N/mm">N/mm</option>
+                              <option value="lbf/in">lbf/in</option>
+                          </select>
+                      </th>
+                  </tr>
+                  <tr>
+                      <th>Damping ratio (coefficient) [ζ]</th>
+                      <th><input type="number" id="dc" name="dc" value="10"></th>
+                      <th>Dimensionless</th>
+                  </tr>
+
+                  <tr>
+                      <th>Base Excitation frequency [Ω]</th>
+                      <th><input type="number" id="Omega" name="Omega" value="10"></th>
+                      <th>Hz</th>
+                  </tr>
+                  <tr>
+                      <th>Base Excitation Amplitude[Y<sub>0</sub>]</th>
+                      <th><input type="number" id="baseamp" name="baseamp" value="10"></th>
+                      <th>
+                          <select id="y_unit" name="y_unit">
+                              <option value="m">m</option>
+                              <option value="mm">mm</option>
+                              <option value="in">in</option>
+                          </select>
+                      </th>
+                  </tr>
+
+
+              </tbody>
+          </table>
+          <hr class="my-6">
+          <div class="col-md-12 text-center">
+              <button type="button" class="btn btn-primary btn-sm" onclick="myfunction()">Calculate</button>
+              
+          </div>
+          <hr class="my-6">
+
+          <div class="container text-center">
+              <table class="table">
+                  <thead class="thead-dark">
+                      <tr>
+                          <th colspan="3">Results</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="table-active">
+                          <th>Parameter</th>
+                          <th>
+                              Value
+                          </th>
+                          <th>
+                              Unit
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Natural Frequency [&omega;<sub>n</sub>]</th>
+                          <th>
+                              0
+                          </th>
+                          <th>
+                              rad/s
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Damped Frequency [&omega;<sub>d</sub>]</th>
+                          <th>0</th>
+                          <th>
+                              Hz
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Damping Ratio[&zeta;]</th>
+                          <th>0</th>
+                          <th>
+                              Dimensionless
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Critical Damping[C<sub>c</sub>]</th>
+                          <th>0</th>
+                          <th>
+                              Dimensionless
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Damping[C]</th>
+                          <th>0</th>
+                          <th>
+                              Ns/m
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Amplitude Ratio</th>
+                          <th>0</th>
+                          <th>
+                              Dimensionless
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Phase [&Phi;]</th>
+                          <th>0</th>
+                          <th>
+                              degrees
+                          </th>
+                      </tr>
+
+                  </tbody>
+              </table>
+          </div>
+          
+
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
