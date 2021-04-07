@@ -102,7 +102,7 @@
                   <tr>
                       <th>Mass [m]</th>
                       <th>
-                          <input type="number" id="mass" name="mass" value="10">
+                          <input type="number" step="0.01" min="0" id="mass" name="mass" value="10">
                       </th>
                       <th>
                           <select id="m_unit" name="m_unit">
@@ -114,7 +114,7 @@
                   </tr>
                   <tr>
                       <th>Spring rate (Stiffness) [k]</th>
-                      <th><input type="number" id="k" name="k" value="10"></th>
+                      <th><input type="number" step="0.01" min="0" id="k" name="k" value="10"></th>
                       <th>
                           <select id="k_unit" name="k_unit">
                               <option value="N/m">N/m</option>
@@ -125,18 +125,18 @@
                   </tr>
                   <tr>
                       <th>Damping ratio (coefficient) [ζ]</th>
-                      <th><input type="number" id="dc" name="dc" value="10"></th>
+                      <th><input type="number" step="0.01" min="0" max="1" id="dc" name="dc" value="10"></th>
                       <th>Dimensionless</th>
                   </tr>
 
                   <tr>
                       <th>Base Excitation frequency [Ω]</th>
-                      <th><input type="number" id="Omega" name="Omega" value="10"></th>
+                      <th><input type="number" step="0.01" min="0" id="Omega" name="Omega" value="10"></th>
                       <th>Hz</th>
                   </tr>
                   <tr>
                       <th>Base Excitation Amplitude[Y<sub>0</sub>]</th>
-                      <th><input type="number" id="baseamp" name="baseamp" value="10"></th>
+                      <th><input type="number" step="0.01" min="0" id="baseamp" name="baseamp" value="10"></th>
                       <th>
                           <select id="y_unit" name="y_unit">
                               <option value="m">m</option>
