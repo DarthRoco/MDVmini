@@ -37,4 +37,23 @@ function myfunction(){
     }
     console.log(m,k,c,Omega,baseamp)
 
+    wn=(k/m)**0.5;
+    wd=wn*((1-c**2)**0.5);
+    critical_damping=2*m*wn;
+    damping_ratio=critical_damping/c;
+    n=Omega/wn;
+    amplitude_ratio=((1+(2*c*n)**2)/((1-n**2)**2 +(2*c*n)**2))**0.5;
+    phase=Math.atan((-2*c*n**3)/(1- (1-4*c**2)*n**2))
+    console.log(wn,wd,critical_damping,damping_ratio,amplitude_ratio,phase)
+
+    var myTable = document.getElementById('table2');
+    myTable.rows[2].cells[1].innerHTML = wn.toFixed(2);
+    myTable.rows[3].cells[1].innerHTML = wd.toFixed(2);
+    myTable.rows[4].cells[1].innerHTML = damping_ratio.toFixed(2);
+    myTable.rows[5].cells[1].innerHTML =critical_damping.toFixed(2);
+    myTable.rows[6].cells[1].innerHTML = 0;
+    
+    myTable.rows[7].cells[1].innerHTML = amplitude_ratio.toFixed(2);
+    myTable.rows[8].cells[1].innerHTML = phase.toFixed(2);
+    
 }
