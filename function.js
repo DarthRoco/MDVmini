@@ -1,9 +1,9 @@
 //variable declaration
 //          inputs
-var m = 1 ;
+var mm = 1 ;
 var dr = 1;
-var k = 1;
-var amp = 1;
+var kk = 1;
+var ampl = 1;
 var fw = new Array(n);
 var ff = 0;
 var val= "";
@@ -25,10 +25,10 @@ var freqr = new Array(n*10);
 
 function assign()
 {
-  m = +document.getElementById('mass').value || 1.00;
-  k = +document.getElementById('k').value || 1.00;
-  dr = +document.getElementById('dr').value || 1.00;
-  amp = +document.getElementById('baseamp').value || 1.00;
+  mm = +document.getElementById('mass').value || 1.00;
+  kk = +document.getElementById('k').value || 1.00;
+  dr = +document.getElementById('dc').value || 1.00;
+  ampl = +document.getElementById('baseamp').value || 1.00;
   ff = +document.getElementById('Omega').value || 1.00;
 
 }
@@ -40,9 +40,9 @@ function compute()
 }
 function outputVals()
 {
-  wn = Math.sqrt(k/m);
+  wn = Math.sqrt(kk/mm);
   document.getElementById('NAF').innerHTML = wn;
-  cc = 2*m*wn;
+  cc = 2*mm*wn;
   document.getElementById('CC').innerHTML = cc;
   c = dr*cc;
   document.getElementById('C').innerHTML = c;
