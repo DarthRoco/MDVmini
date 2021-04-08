@@ -1,6 +1,6 @@
 ﻿<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,261 +8,308 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
     <title>ME352</title>
-  </head>
-  <body>
-      <div class="container" id="top">
+</head>
+<body>
+    <div class="container" id="top">
 
-          <div class="jumbotron">
-              <h1 class="display-4" id="Heading">ME352</h1>
-              <h1 class="display-6" id="Heading">Machine Dynamics And Vibration</h1>
-              <h2 class="display-7" id="Heading">Mini Project</h2>
-              <p class="lead" id="Heading">
-                  Project Name:
-                  SDOF Forced vibration:Base excitation
-              </p>
+        <div class="jumbotron">
+            <h1 class="display-4" id="Heading">ME352</h1>
+            <h1 class="display-6" id="Heading">Machine Dynamics And Vibration</h1>
+            <h2 class="display-7" id="Heading">Mini Project</h2>
+            <p class="lead" id="Heading">
+                Project Name:
+                SDOF Forced vibration:Base excitation
+            </p>
 
-              <p class="lead" id="Heading">Project Members:Shreyas,Dhruvin,Prasanna,Sayak,Subham</p>
-              <p class="lead" id="Heading">
-                  <a class="btn btn-primary btn-sm" href="#" role="button">Project Report</a>
-              </p>
-              
-          </div>
-      </div>
-      <div class="container" id="theory">
-          <div id="accordion">
-              <div class="card">
-                  <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Important Definitions
-                          </button>
-                      </h5>
-                  </div>
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-                          <ul class="list-group list-group-flush">
-                              <li class="list-group-item"><strong> Critical damping:</strong><br />The minimum amount of viscous damping that results in a displaced system returning to its original position without oscillation.</li>
-                              <li class="list-group-item"><strong> Damped natural frequency:</strong><br /> In the presence of damping, the frequency at which the system vibrates when disturbed. Damped natural frequency is less than undamped natural frequency.</li>
-                              <li class="list-group-item"><strong> Damping ratio:</strong><br /> The ratio of actual damping to critical damping. It is a dimensionless measure describing how oscillations in a system decay after a disturbance.</li>
-                              <li class="list-group-item"><strong> Forced vibrations:</strong><br /> Oscillations about a system's equilibrium position in the presence of an external excitation.</li>
-                              <li class="list-group-item"><strong> Free  vibrations:</strong><br /> Oscillations about a system's equilibrium position in the absence of an external excitation.</li>
-                              <li class="list-group-item"><strong>Natural frequency: </strong><br />The frequency at which a system vibrates when set in free vibration.</li>
-                              <li class="list-group-item"><strong>Undamped natural frequency:</strong><br /> In the absence of damping, the frequency at which the system vibrates when disturbed.</li>
-                              <li class="list-group-item"><strong>Period of Oscillation: </strong><br />The time in seconds required for one cycle.</li>
-                              <li class="list-group-item"><strong>Transmissibility: </strong><br />The ratio of output amplitude to input amplitude at same frequency. Following 2 conditions have same transmissibility value.</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Theory
-                          </button>
-                      </h5>
+            <p class="lead" id="Heading">Project Members:Shreyas,Dhruvin,Prasanna,Sayak,Subham</p>
+            <p class="lead" id="Heading">
+                <a class="btn btn-primary btn-sm" href="#" role="button">Project Report</a>
+            </p>
 
-                  </div>
+        </div>
+    </div>
+    <div class="container" id="theory">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Important Definitions
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong> Critical damping:</strong><br />The minimum amount of viscous damping that results in a displaced system returning to its original position without oscillation.</li>
+                            <li class="list-group-item"><strong> Damped natural frequency:</strong><br /> In the presence of damping, the frequency at which the system vibrates when disturbed. Damped natural frequency is less than undamped natural frequency.</li>
+                            <li class="list-group-item"><strong> Damping ratio:</strong><br /> The ratio of actual damping to critical damping. It is a dimensionless measure describing how oscillations in a system decay after a disturbance.</li>
+                            <li class="list-group-item"><strong> Forced vibrations:</strong><br /> Oscillations about a system's equilibrium position in the presence of an external excitation.</li>
+                            <li class="list-group-item"><strong> Free  vibrations:</strong><br /> Oscillations about a system's equilibrium position in the absence of an external excitation.</li>
+                            <li class="list-group-item"><strong>Natural frequency: </strong><br />The frequency at which a system vibrates when set in free vibration.</li>
+                            <li class="list-group-item"><strong>Undamped natural frequency:</strong><br /> In the absence of damping, the frequency at which the system vibrates when disturbed.</li>
+                            <li class="list-group-item"><strong>Period of Oscillation: </strong><br />The time in seconds required for one cycle.</li>
+                            <li class="list-group-item"><strong>Transmissibility: </strong><br />The ratio of output amplitude to input amplitude at same frequency. Following 2 conditions have same transmissibility value.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Theory
+                        </button>
+                    </h5>
 
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                          <p class="lead">
-                              When an applied force causes the system to vibrate it is considered as a case of forced vibration. An external excitation is often reduced to one of the following types:
-                          </p>
-                          <ul class="list-group list-group-flush">
-                              <li class="list-group-item">External Harmonic Force <img class="img-responsive" src="media/eq1.png" /></li>
-                              <li class="list-group-item">Base Excitation <img class="img-responsive" src="media/eq2.png" />,<br /> &emsp;&emsp; Where,<img class="img-responsive" src="media/eq7.png" /> is the motion of base</li>
-                              <li class="list-group-item">Rotating Imbalance <img class="img-responsive" src="media/eq3.png" /></li>
+                </div>
 
-                          </ul>
-                          <br />
-                          <p><ins>In this website we have dealt with Case 2 ie <mark>Base Excitation</mark></ins></p>
-                          <hr />
-                          <p class="lead">
-                              <strong>Solution of the System</strong>
-                          </p>
-                          <p>
-                              The solution of the forced vibration system consists of a steady state part and a transient part. The steady state response is independent of the initial conditions. The transient part comes to zero with time and is usually neglected. <br />
-                              The steady state response is of the form:<br /> &emsp; <img class="img-responsive" src="media/eq4.png" />
-                              <br />where X<sub>0</sub> is the amplitude and &Phi; is the phase of steady state vibration.<br />
-                              If base excitation is given by:<br /> &emsp;<img class="img-responsive" src="media/eq5.png" /><br />
-                              Then the steady state amplitude is given by:<br /> &emsp;<img class="img-responsive" src="media/eq6.png" /><br />
-                              Where,<br /><h4>&emsp;&eta;=<sup>&omega;</sup>&frasl;<sub>&omega;<sub>n</sub></sub></h4>is the ratio of operating frequency to the natural frequency of the system.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Table of Relevant Formulae
-                          </button>
-                      </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                          <p class="lead">The important formulae used are summarised in table below:<br /><img class="img-responsive" src="media/table.jpeg" /></p>
-                      </div>
-                  </div>
-              </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="lead">
+                            When an applied force causes the system to vibrate it is considered as a case of forced vibration. An external excitation is often reduced to one of the following types:
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">External Harmonic Force <img class="img-responsive" src="media/eq1.png" /></li>
+                            <li class="list-group-item">Base Excitation <img class="img-responsive" src="media/eq2.png" />,<br /> &emsp;&emsp; Where,<img class="img-responsive" src="media/eq7.png" /> is the motion of base</li>
+                            <li class="list-group-item">Rotating Imbalance <img class="img-responsive" src="media/eq3.png" /></li>
 
+                        </ul>
+                        <br />
+                        <p><ins>In this website we have dealt with Case 2 ie <mark>Base Excitation</mark></ins></p>
+                        <hr />
+                        <p class="lead">
+                            <strong>Solution of the System</strong>
+                        </p>
+                        <p>
+                            The solution of the forced vibration system consists of a steady state part and a transient part. The steady state response is independent of the initial conditions. The transient part comes to zero with time and is usually neglected. <br />
+                            The steady state response is of the form:<br /> &emsp; <img class="img-responsive" src="media/eq4.png" />
+                            <br />where X<sub>0</sub> is the amplitude and &Phi; is the phase of steady state vibration.<br />
+                            If base excitation is given by:<br /> &emsp;<img class="img-responsive" src="media/eq5.png" /><br />
+                            Then the steady state amplitude is given by:<br /> &emsp;<img class="img-responsive" src="media/eq6.png" /><br />
+                            Where,<br /><h4>&emsp;&eta;=<sup>&omega;</sup>&frasl;<sub>&omega;<sub>n</sub></sub></h4>is the ratio of operating frequency to the natural frequency of the system.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Table of Relevant Formulae
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="lead">The important formulae used are summarised in table below:<br /><img class="img-responsive" src="media/table.jpeg" /></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                            Simulation
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="simulation">
+                            <canvas id="canvas" width=400 height=200></canvas>
+                            <div class="controls">
+                                <div>
+                                    <label>Stiffness (<span id="k_slider_label">20</span> kg / s<sup>2</sup>)</label>
+                                    <input id="k_slider" type="range" min=0 max=100 value=20></input>
+                                </div>
+                                <div>
+                                    <label>Damping Ratio (<span id="b_slider_label">0.2</span>)</label>
+                                    <input id="b_slider" type="range" min=0 max=1 value=0.2 step=0.01></input>
+                                </div>
+                                <div>
+                                    <label>Mass (<span id="m_slider_label">0.5</span>) kg</label>
+                                    <input id="m_slider" type="range" min=0.1 max=5 value=0.5 step=0.1></input>
+                                </div>
+                                <div>
+                                    <label>Base Excitation Amplitude(<span id="a_slider_label">10</span>) m</label>
+                                    <input id="a_slider" type="range" min=0 max=50 value=10 step=1></input>
+                                </div>
+                                <div>
+                                    <label>Base Excitation Frequency (<span id="f_slider_label">0</span>) Hz</label>
+                                    <input id="f_slider" type="range" min=0 max=10 value=1 step=0.1></input>
+                                </div>
 
-          </div>
-
-      </div>
-      <div class="container  text-center" id="inputarea">
-
-          <table class="table">
-              <thead class="thead-dark">
-                  <tr>
-                      <th colspan="3">Input Parameters for Solver</th>
-                  </tr>
-              </thead>
-             
-              <tbody>
-                  <tr class="table-active">
-                      <th>Parameter</th>
-                      <th>
-                          Value
-                      </th>
-                      <th>
-                          Unit
-                      </th>
-                  </tr>
-                  <tr>
-                      <th>Mass [m]</th>
-                      <th>
-                          <input type="number" step="0.01" min="0" id="mass" name="mass" value="10">
-                      </th>
-                      <th>
-                          <select id="m_unit" name="m_unit">
-                              <option value="kg">kg</option>
-                              <option value="g">g</option>
-                              <option value="lb">lb</option>
-                          </select>
-                      </th>
-                  </tr>
-                  <tr>
-                      <th>Spring rate (Stiffness) [k]</th>
-                      <th><input type="number" step="0.01" min="0" id="k" name="k" value="10"></th>
-                      <th>
-                          <select id="k_unit" name="k_unit">
-                              <option value="N/m">N/m</option>
-                              <option value="N/mm">N/mm</option>
-                              <option value="lbf/in">lbf/in</option>
-                          </select>
-                      </th>
-                  </tr>
-                  <tr>
-                      <th>Damping ratio (coefficient) [ζ]</th>
-                      <th><input type="number" step="0.01" min="0" max="1" id="dc" name="dc" value="10"></th>
-                      <th>Dimensionless</th>
-                  </tr>
-
-                  <tr>
-                      <th>Base Excitation frequency [Ω]</th>
-                      <th><input type="number" step="0.01" min="0" id="Omega" name="Omega" value="10"></th>
-                      <th>Hz</th>
-                  </tr>
-                  <tr>
-                      <th>Base Excitation Amplitude[Y<sub>0</sub>]</th>
-                      <th><input type="number" step="0.01" min="0" id="baseamp" name="baseamp" value="10"></th>
-                      <th>
-                          <select id="y_unit" name="y_unit">
-                              <option value="m">m</option>
-                              <option value="mm">mm</option>
-                              <option value="in">in</option>
-                          </select>
-                      </th>
-                  </tr>
+                            </div>
 
 
-              </tbody>
-          </table>
-          <hr class="my-6">
-          <div class="col-md-12 text-center">
-              <button type="button" class="btn btn-primary btn-sm" onclick="myfunction()">Calculate</button>
-              
-          </div>
-          <hr class="my-6">
+                        </div>
 
-          <div class="container text-center">
-              <table class="table" id="table2">
-                  <thead class="thead-dark">
-                      <tr>
-                          <th colspan="3">Results</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr class="table-active">
-                          <th>Parameter</th>
-                          <th>
-                              Value
-                          </th>
-                          <th>
-                              Unit
-                          </th>
-                      </tr>
-                      <tr>
-                          <th>Natural Frequency [&omega;<sub>n</sub>]</th>
-                          <th>
-                              0
-                          </th>
-                          <th>
-                              rad/s
-                          </th>
-                      </tr>
-                      <tr>
-                          <th>Damped Frequency [&omega;<sub>d</sub>]</th>
-                          <th>0</th>
-                          <th>
-                              Hz
-                          </th>
-                      </tr>
-                      <tr>
-                          <th>Damping Ratio[&zeta;]</th>
-                          <th>0</th>
-                          <th>
-                              Dimensionless
-                          </th>
-                      </tr>
-                      <tr>
-                          <th>Critical Damping[C<sub>c</sub>]</th>
-                          <th>0</th>
-                          <th>
-                              Dimensionless
-                          </th>
-                      </tr>
-                      <tr>
-                          <th>Damping[C]</th>
-                          <th>0</th>
-                          <th>
-                              Ns/m
-                          </th>
-                      </tr>
-                      <tr>
-                          <th>Amplitude Ratio</th>
-                          <th>0</th>
-                          <th>
-                              Dimensionless
-                          </th>
-                      </tr>
-                      <tr>
-                          <th>Phase [&Phi;]</th>
-                          <th>0</th>
-                          <th>
-                              degrees
-                          </th>
-                      </tr>
 
-                  </tbody>
-              </table>
-          </div>
-          
 
-      </div>
+
+                        <p class="lead">The above is a small applet to simulate base excitation.For Graph and numerical Values please use the Solver below</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="container  text-center" id="inputarea">
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th colspan="3">Input Parameters for Solver</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="table-active">
+                    <th>Parameter</th>
+                    <th>
+                        Value
+                    </th>
+                    <th>
+                        Unit
+                    </th>
+                </tr>
+                <tr>
+                    <th>Mass [m]</th>
+                    <th>
+                        <input type="number" step="0.01" min="0" id="mass" name="mass" value="10">
+                    </th>
+                    <th>
+                        <select id="m_unit" name="m_unit">
+                            <option value="kg">kg</option>
+                            <option value="g">g</option>
+                            <option value="lb">lb</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Spring rate (Stiffness) [k]</th>
+                    <th><input type="number" step="0.01" min="0" id="k" name="k" value="10"></th>
+                    <th>
+                        <select id="k_unit" name="k_unit">
+                            <option value="N/m">N/m</option>
+                            <option value="N/mm">N/mm</option>
+                            <option value="lbf/in">lbf/in</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Damping ratio (coefficient) [ζ]</th>
+                    <th><input type="number" step="0.01" min="0" max="1" id="dc" name="dc" value="10"></th>
+                    <th>Dimensionless</th>
+                </tr>
+
+                <tr>
+                    <th>Base Excitation frequency [Ω]</th>
+                    <th><input type="number" step="0.01" min="0" id="Omega" name="Omega" value="10"></th>
+                    <th>Hz</th>
+                </tr>
+                <tr>
+                    <th>Base Excitation Amplitude[Y<sub>0</sub>]</th>
+                    <th><input type="number" step="0.01" min="0" id="baseamp" name="baseamp" value="10"></th>
+                    <th>
+                        <select id="y_unit" name="y_unit">
+                            <option value="m">m</option>
+                            <option value="mm">mm</option>
+                            <option value="in">in</option>
+                        </select>
+                    </th>
+                </tr>
+
+
+            </tbody>
+        </table>
+        <hr class="my-6">
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary btn-sm" onclick="myfunction()">Calculate</button>
+
+        </div>
+        <hr class="my-6">
+
+        <div class="container text-center">
+            <table class="table" id="table2">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="3">Results</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <th>Parameter</th>
+                        <th>
+                            Value
+                        </th>
+                        <th>
+                            Unit
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Natural Frequency [&omega;<sub>n</sub>]</th>
+                        <th>
+                            0
+                        </th>
+                        <th>
+                            rad/s
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Damped Frequency [&omega;<sub>d</sub>]</th>
+                        <th>0</th>
+                        <th>
+                            Hz
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Damping Ratio[&zeta;]</th>
+                        <th>0</th>
+                        <th>
+                            Dimensionless
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Critical Damping[C<sub>c</sub>]</th>
+                        <th>0</th>
+                        <th>
+                            Dimensionless
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Damping[C]</th>
+                        <th>0</th>
+                        <th>
+                            Ns/m
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Amplitude Ratio</th>
+                        <th>0</th>
+                        <th>
+                            Dimensionless
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Phase [&Phi;]</th>
+                        <th>0</th>
+                        <th>
+                            degrees
+                        </th>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -270,6 +317,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Connecting  JavaScript  File-->
-    <script src="index.js"> </script>
-  </body>
+    <script src="index.js"></script>
+    <script src="animation.js"></script>
+</body>
 </html>
