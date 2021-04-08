@@ -8,7 +8,7 @@ var ff = 0;
 var val= "";
 
 //          constants
-var n = 200;
+var n = 400;
 var dt = 0.05; //step length of each data interval
 
 //          outputs
