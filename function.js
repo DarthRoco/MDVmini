@@ -57,7 +57,7 @@ function outputVals()
   document.getElementById('PH').innerHTML = ph;
   for (i = 0; i<n*10; i++)
   {
-    freqr[i] = i*dt*10/wn;
+    freqr[i] = i*dt/wn;
     tr[i] = transmissibility(freqr[i]);
     phse[i] = phase(freqr[i]);
   }
@@ -69,7 +69,7 @@ function transmissibility(frr)
 }
 function phase(frr)
 {
-  var phase_ = Math.atan(2*dr*frr/(1-frr**2));
+  var phase_ = Math.atan2((2*dr*frr),(1-frr**2))*180/Math.PI;
   return phase_;
 }
 function plot()
