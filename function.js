@@ -10,8 +10,7 @@ var val= "";
 
 //          constants
 var n = 200;
-var time = new Array(n);
-var dt = 0.05;
+var dt = 0.05; //step length of each data interval
 
 //          outputs
 var wn;
@@ -31,17 +30,11 @@ function assign()
   dr = +document.getElementById('dr').value || 1.00;
   amp = +document.getElementById('baseamp').value || 1.00;
   ff = +document.getElementById('Omega').value || 1.00;
-  for (i = 0; i<n; i++)
-  {
-    time[i] = i*dt;
-    fw[i] = 5*Math.sin(ff*i*dt);
-  }
 
 }
 function compute()
 {
   assign();
-
   outputVals();
   plot();
 }
@@ -76,7 +69,7 @@ function transmissibility(frr)
 }
 function phase(frr)
 {
-  var phase_ = Math.atan2((-2*dr*(Math.pow(frr,3)))/(1-(1-4*(Math.pow(dr,2)))*((Math.pow(frr,2)))));
+  var phase_ = Math.atan(2*dr*frr/(1-frr**2));
   return phase_;
 }
 function plot()
