@@ -89,7 +89,7 @@ function outputVals()
   {
     freqr[i] = i*dt/wn;
     tr[i] = transmissibility(freqr[i]);
-    phse[i] = phase(freqr[i]);
+    phse[i] = phase(freqr[i]/15);
   }
 }
 function transmissibility(frr)
