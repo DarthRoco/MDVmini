@@ -4,7 +4,6 @@ var mm = 1 ;
 var dr = 1;
 var kk = 1;
 var ampl = 1;
-var fw = new Array(n);
 var ff = 0;
 var val= "";
 
@@ -30,6 +29,37 @@ function assign()
   dr = +document.getElementById('dc').value || 1.00;
   ampl = +document.getElementById('baseamp').value || 1.00;
   ff = +document.getElementById('Omega').value || 1.00;
+  m_unit=document.getElementById("m_unit").value;
+  k_unit=document.getElementById("k_unit").value;
+  baseamp_unit=document.getElementById("y_unit").value;
+
+  //converting to SI unit
+  if (m_unit!="kg"){
+      if (m_unit=="g"){
+          mm=mm/1000;
+      }
+      else{
+          mm=mm*0.453592;
+      }
+
+  }
+  if(k_unit!="N/m"){
+      if (k_unit=="N/mm"){
+          kk=kk*1000;
+      }
+      else{
+          kk=kk*175.1268369864;
+      }
+  }
+  if (baseamp_unit!="m"){
+      if (baseamp_unit=="mm"){
+          ampl=ampl/1000;
+      }
+      else{
+          ampl=ampl*0.0254;
+      }
+
+  }
 
 }
 function compute()
