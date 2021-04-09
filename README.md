@@ -1,5 +1,5 @@
 # ME352 Machine Dynamics And Vibration
-Webiste for MDV mini project 
+Website for MDV mini project 
 Technologies used:
 HTML,CSS and JavaScript
 
