@@ -5,4 +5,4 @@ HTML,CSS and JavaScript
 
 # Instructions To Run
 Click on index.html
-Alternatively you can access live hosted website at [ https://darthroco.github.io/MDVmini/](url)
+Alternatively you can access live hosted website [here](https://darthroco.github.io/MDVmini/)
