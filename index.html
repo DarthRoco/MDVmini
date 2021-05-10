@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="container" id="theory">
-        <div id="accordion">
+        <div id="accordion">  <!--Accordion class Collapses/Expands task on clicking -->
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
@@ -68,7 +68,7 @@
 
                 </div>
 
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion"> <!--Accordion class Collapses/Expands task on clicking -->
                     <div class="card-body">
                         <p class="lead">
                             When an applied force causes the system to vibrate it is considered as a case of forced vibration. An external excitation is often reduced to one of the following types:
@@ -104,7 +104,7 @@
                         </button>
                     </h5>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"> <!--Accordion class Collapses/Expands task on clicking -->
                     <div class="card-body">
                         <p class="lead">The important formulae used are summarised in table below:<br /><img class="img-responsive" src="./media/table.jpeg" /></p>
                     </div>
@@ -163,7 +163,7 @@
     </div>
     <div class="container  text-center" id="inputarea">
 
-        <table class="table">
+        <table class="table"> <!--Table to input parameters required -->
             <thead class="thead-dark">
                 <tr>
                     <th colspan="3">Input Parameters for Solver</th>
@@ -197,7 +197,7 @@
                     <th>Spring rate (Stiffness) [k]</th>
                     <th><input type="number" step="0.01" min="0" id="k" name="k" value="10"></th>
                     <th>
-                        <select id="k_unit" name="k_unit">
+                        <select id="k_unit" name="k_unit"> <!-- drop down box to select input unit-->
                             <option value="N/m">N/m</option>
                             <option value="N/mm">N/mm</option>
                             <option value="lbf/in">lbf/in</option>
